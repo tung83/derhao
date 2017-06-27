@@ -1,0 +1,263 @@
+
+
+
+@charset "utf-8";
+
+.box_containerlienhe
+{
+    background: rgba(255, 255, 255, .3);
+
+}
+.box_containerlienhe form label{
+    font-weight: normal;
+    font-size: 17px;
+}
+.box_containerlienhe .content
+{
+}
+.box_containerlienhe .box_contact_l
+{
+  line-height:25px;
+}
+.box_containerlienhe .box_contact_r
+{
+	/* padding:15px 10px 0px 20px; */
+	/* margin: 10px 0; */
+}
+.box_containerlienhe .box_contact_r td
+{
+  font-size:14px;
+}
+.box_containerlienhe .box_contact_r span
+{
+	color:#c40707;
+}
+.box_containerlienhe .box_contact_r input,
+.box_containerlienhe .box_contact_r textarea
+{
+	/* margin: 7px; */
+padding: 5px 7px;
+border: 1px solid #ccc;
+border-radius: 2px;
+color: #8A8383;
+
+	/* width:90%; */
+}
+.tablelienhe td{
+	padding:7px 0;
+}
+.box_containerlienhe  .button
+{
+  background: #1BBC9B;/* Old browsers *//* FF3.6+ *//* Chrome,Safari4+ *//* Chrome10+,Safari5.1+ *//* Opera 11.10+ *//* IE10+ *//* W3C *//* IE6-9 */
+  padding: 8px 28px;
+  padding-bottom: 5px;
+  border: none;
+  margin-top: 15px;
+  width: auto;
+  color: #fff;
+  font-size: 15px;
+  cursor:hand;
+  cursor:pointer;
+  border-radius: 0;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+.box_containerlienhe  .button:hover{
+    background: #495242;
+ /* Old browsers */
+ /* FF3.6+ */ /* Chrome,Safari4+ */
+ /* Chrome10+,Safari5.1+ */
+ /* Opera 11.10+ */
+ /* IE10+ */
+ /* W3C */
+ /* IE6-9 */
+}
+.content_gioithieu
+{
+	padding:10px;
+	}
+
+.box_containerlienhe .box_new
+{
+
+	padding:5px 15px;
+	float:left;
+	border-bottom:1px dotted #A0A0A4;
+	}
+.box_containerlienhe .box_new:last
+{
+	border-bottom:none;
+	}
+
+.box_containerlienhe .box_new h1 a
+{
+	color:#000000;
+	font-size:17px;
+	text-decoration:none;
+  margin:5px;
+	}
+.box_containerlienhe .box_new h1 a:hover
+{
+	color:#F00 !important;
+}
+
+.box_containerlienhe .othernews h1
+{
+	color:#d31158;
+}
+
+.box_containerlienhe .othernews ul
+{
+	list-style:none;
+	margin-top:10px;
+}
+.box_containerlienhe .othernews ul li
+{
+  padding:3px 10px 3px 40px;
+}
+.box_containerlienhe .othernews ul li a
+{
+	color:#d31158;
+	background;url(../images/bg_tieude.png)no-repeat left 0;
+}
+.box_containerlienhe .othernews ul li a:hover
+{
+	color:#D40000;
+}
+
+
+
+
+
+
+
+
+
+
+<!--H?p tin t?c-->
+
+.wap_box_new
+{
+  margin-bottom:10px;
+}
+.box_new
+{
+  margin:10px 11px;
+}
+.box_new a h4:hover
+{
+	color:#F00;
+}
+.box_new a.chitiet
+{
+	color:#00F;
+}
+.box_new h3
+{
+  background:url(images/i_dichvu.png)no-repeat;
+  padding:5px 0px;
+  padding-left:30px;
+  color:#002dad;
+  font-size:12px;
+}
+.box_new h4
+{
+	font-size:16px;
+	color:#2A00FF;
+	font-weight:normal;
+	margin-bottom:10px;
+}
+.box_new img
+{
+  float:left;
+  margin:4px 15px 3px 0px; 
+  width:170px;
+  height:130px;
+}
+.box_new p
+{
+  text-align:justify;
+}
+.box_new a.chitiet img
+{
+ 
+ width:84px;
+ height:32px;
+ margin:0px;
+ float:right;
+ border:none;
+}
+.inputx{margin:7px 0}
+.inputx .captcha-image{
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.inputx .captcha-image img{}
+.inputx .captcha-image a{
+    margin-top: 5px;
+    display: block;
+}
+.inputx .captcha-image a:hover{}
+.inputx input,.inputx textarea{
+    border-radius: 0;
+    padding: 10px 7px;
+    height: auto;
+}
+
+
+
+
+
+
+#contact .title-contact{}
+#contact .title-contact h2{
+    margin: 0;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 21px;
+}
+#contact .company-name h2{
+   
+  font-family: Avo_bold;
+    font-size: 19px;
+    color: #1F4198;
+    margin: 0;
+    margin-bottom: 25px;
+    margin-top: 0;
+}
+#contact .list-comname{
+    font-size: 17px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    position: relative;
+}
+#contact .list-comname i{
+    font-size: 19px;
+    width: 20px;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.btn-form{text-align:right}
+#contact 	.form-horizontal label{    font-weight: normal;
+    text-align: left;}
+#contact 	.info-logo{text-align:center;margin-bottom: 20px;}
+#contact 	.info-logo img{display:inline-block}
+
+#contact .btn.btn-default{    padding: 5px 9px;
+    font-weight: bold;
+    margin: 4px;
+    background: rgb(249,252,247);
+    background: -moz-linear-gradient(top, rgba(249,252,247,1) 0%, rgba(245,249,240,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(249,252,247,1) 0%,rgba(245,249,240,1) 100%);
+    background: linear-gradient(to bottom, rgba(249,252,247,1) 0%,rgba(245,249,240,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9fcf7', endColorstr='#f5f9f0',GradientType=0 );
+    font-size: 15px;
+    text-transform: capitalize;
+    border-radius: 0;}

@@ -1,0 +1,41 @@
+<link href="assets/css/slider-bx.css" type="text/css" rel="stylesheet" />
+
+<?php
+$d->reset();
+$d->query("select * from #_slider where hienthi = 1	and type='slider' order by stt,id desc");
+$slider = $d->result_array();
+?>
+<div class='slider-wrapper-pager'>
+<div class="container-fluid"  id="slider-fixed">
+	<div class="row">
+		
+		<div id="slider-wrapper">
+				<div id="slider" >
+					<ul id="iview">
+					<?php
+						foreach($slider as $k=>$v){
+							echo '<li><a class="" href="'.$v['link'].'"><img src="'._upload_hinhanh_l.$v['photo'].'" /> </a></li>';
+						}
+					?>
+					</ul>
+				</div><!-- end  slider -->
+				
+		</div><!-- end  slider-wrapper -->
+		
+		
+		<div class="clearfix"></div>
+	</div>
+</div>
+</div>
+<script>
+	$(document).ready(function(){
+		$('#iview').bxSlider({
+			//mode:'fade',
+			auto:<?=(count($slider) > 1) ? 'true' : 'false'?>,
+			controls:0,
+			pager:0,
+			pause:5000,
+
+		})
+	})
+</script>

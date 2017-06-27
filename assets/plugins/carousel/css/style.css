@@ -1,0 +1,131 @@
+#wrap-logo:after,#wrap-logo:before{position:absolute;width:100%;height:1px;background:#fff;content:"";opacity: 0;}
+#wrap-logo:after{position:absolute;width:100%;height:1px;background:#fff;content:""}
+#wrap-logo{position:relative;/* border: 1px solid #ccc; */border-left: 0;border-right: 0;/* margin-bottom: 10px; */}
+.clearout {
+height:20px;
+clear:both;
+}
+
+#flexiselDemo1, #flexiselDemo2, #flexiselDemo3 {
+display:none;
+}
+
+.nbs-flexisel-container {
+    position:relative;
+    max-width:100%;
+}
+.nbs-flexisel-ul {
+    position:relative;
+    width:9999px;
+    margin:0px;
+    padding:0px;
+    list-style-type:none;   
+    text-align:center;  
+}
+
+.nbs-flexisel-inner {
+    overflow:hidden;
+    float:left;
+    width: 100%; /* FF3.6+ */ /* Chrome,Safari4+ */ /* Chrome10+,Safari5.1+ */ /* Opera11.10+ */ /* IE10+ */ /* W3C */
+    -moz-border-radius:5px;
+    /* padding: 1%; */
+    /* -webkit-border-radius:5px; */  
+}
+
+.nbs-flexisel-item {
+    float:left;
+    margin:0px;
+    padding:0px;
+    cursor:pointer;
+    position :relative;
+    line-height:0px;
+}
+.nbs-flexisel-item img{}
+.nbs-flexisel-item  div{position:relative;width: 100%;height: 100px;}
+.nbs-flexisel-item  div div.inner-target{
+    width: 98%;
+    margin: auto;
+    /* border: 1px solid #ccc; */
+    /* background: #fff; */
+}
+.nbs-flexisel-item img {
+    cursor: pointer;
+    position: absolute;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-width: 100%;
+    max-height: 100%;
+    /* padding: 4px; */
+    /* background: #fff; */
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+}
+
+/*** Navigation ***/
+
+.nbs-flexisel-nav-left,
+.nbs-flexisel-nav-right {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    display: none;
+    cursor: pointer;
+    z-index: 100;
+    opacity: 1;
+}
+
+.nbs-flexisel-nav-left {
+    left: 0;
+    background: url(../images/button-next.png) no-repeat;
+}
+
+.nbs-flexisel-nav-right {
+    right: 0;
+    background: url(../images/button-previous.png) no-repeat;
+}
+
+		#logo-partne{
+			position:relative;
+			margin-top: 0px;
+		
+		border-radius:10px;
+		
+			padding-top:10px;
+			padding-bottom:10px;
+		
+}
+		#logo-partne .title h2{
+    margin: 0;
+    background: #F7F7F7;
+    float: left;
+    color: #0084CC;
+    text-transform: uppercase;
+    font-size: 17px;
+    padding-right: 10px;
+    line-height: 13px;
+    font-weight: bold;
+    position: relative;
+}
+		#logo-partne .title h2:after{content:"";position:absolute;background: #00A0FF;width: 10px;height: 13px;right: -10px;}
+		#logo-partne .title{
+		display: block;
+			
+		background: url(../images/x-longa.png) repeat-x;
+
+		/* position: absolute; */
+top: 0;
+z-index: 123;
+width: 105px;
+height: 24px;
+line-height: 24px;
+text-indent: 7px;
+top: -12px;
+		color:#fff;
+		display: none;
+		width: 100%;
+}
+
+

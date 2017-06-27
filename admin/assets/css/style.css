@@ -1,0 +1,43 @@
+.radio input{
+    margin-top: 3px;
+}
+b,strong{font-family: 'Myriad Pro Bold';}
+#tab-content{padding: 10px;
+border: 1px solid #ccc;
+}
+.tab-content{padding: 10px;
+border: 1px solid #ccc;
+border-top: 0;}
+.tab-content textarea{height:100px}
+.align-left{text-align:left !important}
+.w-120{width:120px}
+.block_menu #title{FONT-SIZE:14PX;font-weight:normal !important}
+section.content .box-header h3{
+    margin: 0;
+    /* margin-bottom: 10px; */
+    font-size: 18px;
+    /* font-weight: bold; */
+    text-transform: uppercase;
+    font-style: normal;
+    margin-left: 10px;
+    font-family: 'Myriad Pro Semibold';
+    padding-top: 10px;
+}
+#contentwrapper #content .btn-success,#contentwrapper #content .btn-warning{
+ 
+font-weight: bold;
+padding: 5px 20px;
+}
+.red{color:red}
+table th select{}
+th,td,tr,thead,table input[type=checkbox]{padding:4px !important;height: 14px !important;margin:0 !important;line-height:1.5;position: relative;top: 1px;}
+textarea.form-control{min-height: 150px !important;}
+label input[type=checkbox]{
+
+	margin-top:-4px;
+}
+
+.icon-form{padding: 4px 7px;font-size: 13px;background: #FFFFFF;-webkit-box-shadow: 0px 0px 2px 0px rgba(50, 50, 50, 0.3);
+-moz-box-shadow:    0px 0px 2px 0px rgba(50, 50, 50, 0.3);
+box-shadow:         0px 0px 2px 0px rgba(50, 50, 50, 0.3);color: #00C0EF;}
+p{margin-bottom:1px}

@@ -1,0 +1,170 @@
+.main-member-place{
+    padding: 10px;
+}
+.prev_container{
+	overflow: auto;
+	width: 300px;
+	height: 135px;
+}
+
+.prev_thumb{
+	margin: 10px;
+	height: 100px;
+	width: 100px;
+}
+
+.main-member-place .title{
+	border-bottom:1px solid #00BBD6;
+}
+.main-member-place .title h2{
+	font-size:20px;
+	
+	font-weight:normal;
+	margin:0;
+	margin-bottom:5px;
+}
+.main-member-place form{
+	margin-top:10px;
+	font-family: Alter-gothic;
+	font-weight: normal !important;
+	font-size: 115%;
+}
+.main-member-place form label{font-weight:normal !important}
+.main-member-place form button{
+    font-size: 17px;
+    text-transform: uppercase;
+    line-height: 17px;
+    padding-top: 9px;
+}
+.main-member-place form .pull-left.is{
+	height:30px;
+	line-height:30px;
+	padding:0 4px;
+
+}
+.main-member-place form  .help-block.col-sm-offset-3{
+	padding-left:15px;
+	color:red;
+	
+	font-weight:normal;
+
+}
+.main-member-place form  .help-block.col-sm-offset-3 label{font-weight:normal;}
+
+
+
+
+
+#preview
+{
+color:#cc0000;
+font-size:12px
+}
+.imgList 
+{
+max-height:150px;
+margin-left:5px;
+border:1px solid #dedede;
+padding:4px;	
+float:left;	
+}
+
+
+.input-file-row-1:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+.input-file-row-1 .remove{
+	background:url(assets/img/remove.png) no-repeat;
+	width:30px;
+	height:30px;
+	float:left;
+	position: absolute;
+right: 0;
+top: -2px;
+	
+	z-index: 123;
+}
+.input-file-row-1{
+    display: inline-block;
+	margin-top: 25px;
+	position: relative;
+}
+
+html[xmlns] .input-file-row-1{
+    display: block;
+}
+
+* html .input-file-row-1 {
+    height: 1%;
+}
+
+.upload-file-container { 
+	position: relative; 
+	width: 100px; 
+	height: 100px; 
+	overflow: hidden;	
+	background: url(http://i.imgur.com/AeUEdJb.png) top center no-repeat;
+	float: left;
+	margin:0px 10px;
+} 
+
+.upload-file-container:first-child { 
+	
+} 
+
+.upload-file-container > img {
+	width: 88px;
+height: 88px;
+border-radius: 5px;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+margin-left: 6px;
+margin-top: 2px;
+}
+
+.upload-file-container-text{
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	color: #719d2b;
+	line-height: 17px;
+	text-align: center;
+	display: block;
+	position: absolute; 
+	left: 0; 
+	bottom: 0; 
+	width: 100px; 
+	height: 35px;
+}
+
+.upload-file-container-text > span{
+	border-bottom: 1px solid #719d2b;
+	cursor: pointer;
+}
+
+.upload-file-container input  { 
+	position: absolute; 
+	left: 0; 
+	bottom: 0; 
+	font-size: 1px; 
+	opacity: 0;
+	filter: alpha(opacity=0);	
+	margin: 0; 
+	padding: 0; 
+	border: none; 
+	width: 70px; 
+	height: 50px; 
+	cursor: pointer;
+}
+.captcha-refresh-button{
+	position: relative;
+	top: 6px;
+}
+
+.main-member-place .content{
+	margin-top:20px;
+}

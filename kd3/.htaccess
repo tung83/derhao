@@ -1,0 +1,6 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^kd3\.derhao\.com\.vn$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.kd3\.derhao\.com\.vn$
+RewriteRule ^/?$ "http\:\/\/derhao\.com\.vn\\kd3" [R=301,L]
+

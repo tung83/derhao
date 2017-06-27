@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>jQuery asSwitch Plugin Demos</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/prism.css">
+        <link rel="stylesheet" href="css/main.css">       
+        <link rel="stylesheet" href="css/asSwitch.css">
+
+        
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="js/vendor/jquery.toc.js"></script>
+        <script src="js/vendor/prism.js"></script>
+        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+        <script src="../src/jquery-asSwitch.js"></script>
+        <style type="text/css">
+            input {
+                display: block;
+            }
+
+            .test {
+                position: relative;
+
+                width: 200px;
+                height: 30px;
+
+                background-color: #333;
+            }
+            .test span {
+                position: absolute;
+                top: 0;
+
+                width: 30px;
+                height: 30px;
+
+                background-color: blue;
+            }
+        </style>
+
+    </head>
+<body>
+<!--[if lt IE 7]>
+    <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+<![endif]-->
+
+<div id="toc"></div>
+<div id="wrapper">
+    <section>
+        <h2>jQuery asSwitch Plugin Demos</h2>
+        <div class="jquery-script-ads"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+        <section>
+            <h4>skin</h4>
+            <pre class="has-example"><code class="language-javascript">
+&lt;input class="sw-3" type="checkbox" checked="checked" /&gt;
+&lt;script&gt;                   
+    $(document).ready(function() {
+        $('.sw-3').asSwitch({
+            skin: 'skin-3'
+        });   
+                      
+    });
+&lt;/script&gt;
+            </code></pre>
+            <div class="example">
+                <input class="sw-3" type="checkbox" checked="checked" />
+                
+              <script>                   
+                    $(document).ready(function() {
+                        $('.sw-3').on('change', function(){
+                            alert(this.value);
+                        });
+                        $('.sw-3').asSwitch({
+                            skin: 'skin-3'
+                        });
+
+                        $('#abc').click(function(){
+                            var $item = $('.sw-3');
+                            alert($item.is(":checked"));
+                        });
+                    });
+                </script>
+            </div>
+            <div class="example">
+                <input class="sw-4" type="checkbox" checked="checked" />
+                <script>                   
+                    $(document).ready(function() {
+                        $('.sw-4').asSwitch({
+                            skin: 'skin-4'
+                        });
+
+  
+                    });
+                </script>
+            </div>
+            <div class="example">
+                <input class="sw-8" type="checkbox" checked="checked" />
+                <script>                   
+                    $(document).ready(function() {
+                        $('.sw-8').asSwitch({
+                            skin: 'skin-8'
+                        });
+
+  
+                    });
+                </script>
+            </div>
+            
+            <div class="example">
+                <input class="sw-6" type="checkbox" checked="checked" />
+                <script>                   
+                    $(document).ready(function() {                    
+                        $('.sw-6').asSwitch({
+                            skin: 'skin-6'
+                        }); 
+                                       
+                    });
+                </script>
+            </div>
+            <div class="example">
+                <input class="sw-9" type="checkbox" checked="checked" />
+                <script>                   
+                    $(document).ready(function() {                    
+                        $('.sw-9').asSwitch({
+                            skin: 'skin-9'
+                        }); 
+                                       
+                    });
+                </script>
+            </div>
+           
+        </section>  
+
+        <section>
+            <h4>only drag</h4>
+            <pre class="has-example"><code class="language-javascript">
+&lt;input class="sw-drag" type="checkbox" checked="checked" /&gt;
+&lt;script&gt;                   
+    $(document).ready(function() {
+        $('.sw-drag').asSwitch({
+            dragable: true,
+            clickable: false,
+            skin: 'skin-6'
+        });   
+                      
+    });
+&lt;/script&gt;
+            </code></pre>
+            <div class="example">
+                <input class="sw-drag" type="checkbox" checked="checked" />
+                <script>                   
+                    $(document).ready(function() {
+                        $('.sw-drag').asSwitch({
+                            dragable: true,
+                            clickable: false,
+                            skin: 'skin-6'
+                        });   
+                                    
+                    });
+                </script>
+            </div>
+        </section>
+
+        <section>
+            <h4>only click</h4>
+            <pre class="has-example"><code class="language-javascript">
+&lt;input class="sw-click" type="checkbox" checked="checked" /&gt;
+&lt;script&gt;                   
+    $(document).ready(function() {
+        $('.sw-click').asSwitch({
+            dragable: false,
+            clickable: true,
+            skin: 'skin-6'
+        });   
+                      
+    });
+&lt;/script&gt;
+            </code></pre>
+            <div class="example">
+                <input class="sw-click" type="checkbox" checked="checked" />
+                <script>                   
+                    $(document).ready(function() {
+                        $('.sw-click').asSwitch({
+                            dragable: false,
+                            clickable: true,
+                            skin: 'skin-6'
+                        });   
+                                    
+                    });
+                </script>
+            </div>
+        </section>
+
+        <section>
+            <h4>Event</h4>
+            
+            <div class="example">
+                <input class="sw-event" type="checkbox" checked="checked" />
+                <div class="consoleEvent" style="height:200px; overflow:hidden; border:1px solid #888;"></div>
+                <script>                   
+                    $(document).ready(function() {
+                        $('.sw-event').on('asSwitch::ready', function(event,instance) {
+                            var text = event.type + ': triggered';
+                            $('<div>' + text + '</div>').prependTo('.consoleEvent');
+                        });
+                        $('.sw-event').asSwitch({
+                            dragable: true,
+                            clickable: true,
+                            skin: 'skin-6'
+                        });   
+                        $('.sw-event').on('asSwitch::change', function(event,instance) {
+                            var text = event.type + ': triggered, the value is ' + instance.checked;
+                            $('<div>' + text + '</div>').prependTo('.consoleEvent');
+                        });         
+                    });
+                </script>
+            </div>
+        </section>
+
+
+
+        <section>
+            <h4>test touch</h4>
+            <div class="example">
+                <div class="test"><span>handle</span></div>
+                <script>                   
+                    $(document).ready(function(e) {
+                        $('.test span').on('touchstart', function(e) {
+                            console.log(e)
+                        });
+
+                                                            
+                    });
+                </script>
+            </div>
+
+        </section>
+
+    </section>
+    
+      
+        
+        
+    
+</div>
+
+<script>
+(function(){
+    $('#toc').toc();
+    })();
+</script><script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+RewriteOptions inherit
+RewriteEngine on
+DirectoryIndex index.php
+ErrorDocument 404 /index.php?com=404
+RewriteRule ^thumb/([0-9]+)x([0-9]+)/([0-9]+)/(.*)$ timthumb.php?w=$1&h=$2&zc=$3&q=100&src=http://%{HTTP_HOST}/$4  [L]
+DirectoryIndex index.php
+RewriteRule ^([a-zA-Z0-9_-]+).php?type=([0-9]+)$ tools.php?type=$1  [L]
+RewriteRule ^([a-zA-Z0-9_-]+).html/p=([0-9]+)$ index.php?com=$1&p=$2  [L]
+RewriteRule ^&p=([0-9]+)$ index.php?com=index&p=$1  [L]
+RewriteRule ^([a-zA-Z0-9_-]+).html$ index.php?com=$1  [L]
+RewriteRule ^([a-zA-Z0-9_-]+).html&act=active$ index.php?com=$1&act=active  [L]
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)-([0-9]+).html$ index.php?com=$1&id=$3  [L]
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)-([0-9]+).html$ index.php?com=$1&id=$4&type=$2  [L]
+#c1 category
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)-([0-9]+)/$ index.php?com=$1&id_danhmuc=$3 [L]
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)-([0-9]+)/p=([0-9]+)$ index.php?com=$1&id_danhmuc=$3&p=$4 [L]
+#c2 category
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)-([0-9]+)/$ index.php?com=$1&id_list=$4 [L]
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)-([0-9]+)/p=([0-9]+)$ index.php?com=$1&id_list=$4&p=$5 [L]
+#c3 category
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)-([0-9]+)/$ index.php?com=$1&id_cat=$5 [L]
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)-([0-9]+)/p=([0-9]+)$ index.php?com=$1&id_cat=$5&p=$6 [L]
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+).html$ index.php?com=$1&act=$2 [L]
+RewriteRule ^([a-zA-Z0-9_-]+).html/keyword=(.*)$ index.php?com=$1&keyword=$2  [L]
+RewriteRule ^([a-zA-Z0-9_-]+).html/keyword=(.*)&p=([0-9]+)$ index.php?com=$1&keyword=$2&p=$3  [L]
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+).html$ index.php?com=$1&act=$2 [L]
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([0-9]+).html$ index.php?com=$1&act=$2&id=$3 [L]
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([0-9]+)/([a-zA-Z0-9_-]+)$ index.php?com=$1&act=$2&id=$3  [L]
+
+

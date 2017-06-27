@@ -1,0 +1,98 @@
+
+
+.clearout {
+height:20px;
+clear:both;
+}
+
+#flexiselDemo1, #flexiselDemo2, #flexiselDemo3 {
+display:none;
+}
+
+.nbs-flexisel-container {
+	margin-top: 0;
+position: relative;
+max-width: 100%;
+float: left;
+margin-left: 0;
+}
+.nbs-flexisel-ul {
+    position:relative;
+    width:9999px;
+    margin:0px;
+    padding:0px;
+    list-style-type:none;   
+    text-align:center;  
+}
+
+
+		.nbs-flexisel-inner {
+
+float: left;
+width: 800px;
+
+height: 215px;
+position: relative;
+}
+   
+
+
+.nbs-flexisel-item {
+    float:left;
+    margin:0px;
+    padding:0px;
+    cursor:pointer;
+    position:relative;
+    line-height:0px;
+}
+.nbs-flexisel-item img {
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-width:145px;
+    max-height:150px;
+}
+
+/*** Navigation ***/
+
+.nbs-flexisel-nav-left,
+.nbs-flexisel-nav-right {
+    width: 28px;
+    height: 28px; 
+    position: absolute;
+    cursor: pointer;
+    z-index: 100;
+    opacity: 0.5;
+	top:36px !important;
+}
+
+.nbs-flexisel-nav-left {
+    left: 10px;
+    background: url(../images/left.png) no-repeat;
+	display:none;
+}
+
+.nbs-flexisel-nav-right {
+	display:none;
+    right: 5px;
+    background: url(../images/right.png) no-repeat;
+}
+.nbs-flexisel-item img{width: 145px;
+height: 150px;}
+.ar-fl{
+	position:absolute;
+	top:85px;
+}
+.ar-fl.right-nav{
+	right:10px;
+}
+
+.nbs-flexisel-item .name{
+	height: 30px;
+float: left;
+width:100%;
+text-align: center;
+line-height: 18px;
+}
