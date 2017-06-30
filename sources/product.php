@@ -31,7 +31,7 @@ $class_bg = "";
 
 if($id!='')
 {
-    #các s?n ph?m khác======================
+    #cï¿½c s?n ph?m khï¿½c======================
     $sql_lanxem = "UPDATE #_product SET luotxem=luotxem+1  WHERE id ='".$id."'";
     $d->query($sql_lanxem);
     $sql_detail = "select * from #_product where hienthi=1 and id='".$id."'";
@@ -203,7 +203,6 @@ else
 		
 	}
 	$_list_product_danhmuc = array();
-	
 	$d->query("select ten_$lang,tenkhongdau,id,type from #_product_danhmuc where hienthi = 1 and type='$com' order by stt desc");
 	
 	$_list_product_danhmuc = $d->result_array();

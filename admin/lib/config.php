@@ -19,8 +19,8 @@ $config['finder']['folder'] = $f;
 $config['finder']['dir'] = "/upload/user/";
 /* db config */
 $config['database']['servername'] = 'localhost';
-$config['database']['username'] = 'psmedia_derhao';
-$config['database']['password'] = '671977';
+$config['database']['username'] = 'tung';
+$config['database']['password'] = 'tung';
 $config['database']['database'] = 'psmedia_derhao';
 $config['database']['refix'] = 'table_';
 $config['md5'] = md5($f.$config['database']['database']);

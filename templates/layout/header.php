@@ -15,7 +15,7 @@ $rs_banner = $d->fetch_array();
 	<div class="top-header">
 		<div class="container">	
 			<div class="row">
-				<div class="col-xs-12 col-md-6 col-sm-5">
+				<div class="col-xs-12 col-md-5 col-sm-5">
 					<div class="top-link-fb">
 						<a href="<?=$rs_hotline['facebook']?>" target="_blank"><i class="fa fa-facebook-f"></i> | <?=_welcome_to_our_facebook?></a>
 					</div>
@@ -32,13 +32,14 @@ $rs_banner = $d->fetch_array();
 					 
 					   <?php }?>
 				</div>
-				<div class="col-xs-12 col-md-3 col-sm-3 hotline-block">
+				<div class="col-xs-12 col-md-4 col-sm-4 hotline-block">
 				<?php 
-						$ob_lang = ($lang=="vi") ? 'en' : 'vi';
+						$ob_lang = ($lang=="vi") ? 'en' : 'vi';                        
+                                                $ob_lang_image = ($lang=="vi") ? '<img src="/images/flag_en.png">' : '<img src="/images/flag_vi.png"/>';
 					?>
-					<div class="holtline"><span class=" <?=($global_setting['visible_hotline']) ? '' : 'hide'?>">Hotline: <a href="tel:<?=$rs_hotline['hotline_'.$lang]?>"><?=$rs_hotline['hotline_'.$lang]?></a></span> <span><?=_language?>&nbsp;<a href="index.php?com=ngonngu&lang=<?=$ob_lang?>"><?=strtoupper($ob_lang)?></a></span></div>
-					
-					
+					                    <div class="holtline"><span class=" <?=($global_setting['visible_hotline']) ? '' : 'hide'?>">Hotline: <a href="tel:<?=$rs_hotline['hotline_'.$lang]?>"><?=$rs_hotline['hotline_'.$lang]?></a></span> <span><?=_language?>&nbsp;<a href="index.php?com=ngonngu&lang=<?=$ob_lang?>"><?=$ob_lang_image?></a></span></div>
+				
+	
 					<div class="search-bar hidden-xs hidden-sm">
 						<form method="get" class="search-box">
 							<input type="text" name="keyword" required />

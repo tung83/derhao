@@ -73,13 +73,13 @@
 			 <li class="treeview ">
               <a href="#">
                 <i class="fa fa-circle-o text-yellow"></i>
-                <span>Khuyến mãi</span>
+                <span>Tin tức</span>
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
 					<?=$admin->showMenu("Quản lý danh mục cấp 1","product","man_danhmuc","","type=instock&content=0&desc=0&img=0&title=0")?>
 					
-					<?=$admin->showMenu("Quản lý sản phẩm","product","man","","type=instock&new=1&gallery=1&class=1&img=1&desc=1&content=1&title=1")?>
+					<?=$admin->showMenu("Quản lý tin tức","product","man","","type=instock&new=1&gallery=1&class=1&img=1&desc=1&content=1&title=1")?>
 					
               </ul>
             </li>

@@ -49,7 +49,6 @@
 		$model = new model($d,$lang);
 	}
 	require_once _source."lang_$lang.php";
-	
 	switch($com)
 	{
 		case 'detect':
@@ -209,10 +208,11 @@
 			$template = isset($_GET['id']) ? "content/detail_service" : "content/service_index";
 			break;	
 		case 'tin-tuc':
-			$source = "content";
+		case 'news':
+			$source = "tintuc";
 			$type = "news";
 			$suffix = _news;
-			$template = isset($_GET['id']) ? "content/detail_special" : "content/index_special";
+			$template = isset($_GET['id']) ? "news/detail" : "news/index";
 			break;	
 		case 'tu-van':
 			$source = "content";

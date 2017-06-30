@@ -151,32 +151,18 @@
 							
 							<div class="award">
 							<div class="row">
-							<div class="">
-								<div class="col-md-12 col-lg-12 col-xs-10 col-xs-offset-1 col-md-offset-0 col-lg-offset-0">
+                                                            <div class="col-md-12 col-lg-12 col-xs-10 col-xs-offset-1 col-md-offset-0 col-lg-offset-0">
 								<ul>
 								
 								<?php 
 									$d->query("select photo,link,ten from #_slider where type='award' and hienthi = 1 order by stt desc");
 									foreach($d->result_array() as $k=>$v){
-										echo '<li><div><a href="'.$v['link'].'" title="'.$v['ten'].'" target="_blank"><img class="img-responsive" src="thumb/200x200/3/'._upload_hinhanh_l.$v['photo'].'" alt="'.$v['ten'].'" /></a></div></li>';
+										echo '<li class="col-xs-4 award-li"><div><a href="'.$v['link'].'" title="'.$v['ten'].'" target="_blank"><img class="img-responsive" src="thumb/200x200/3/'._upload_hinhanh_l.$v['photo'].'" alt="'.$v['ten'].'" /></a></div></li>';
 									}
 								
 								?>
 								</ul>
-								<script>
-								$().ready(function(){
-								$('.award ul').owlCarousel({
-								loop:true,
-								margin:30,
-								items:3,
-								dots:false,
-								autoplay:true,
-								
-								})
-								})
-								</script>
-							</div>
-							</div>
+                                                            </div>
 							</div>
 							</div>
 						</div>

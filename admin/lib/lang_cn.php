@@ -33,7 +33,7 @@
 
 @define ('_read_cotinue','Đọc tiếp');
 @define ('_more_school_info','Các thông tin khác');
-@define ('_more_promotion_info','Khuyến mãi khác');
+@define ('_more_promotion_info','Tin tức khác');
 @define ('_more_service_info','Dịch vụ khác');
 
 /* visit */

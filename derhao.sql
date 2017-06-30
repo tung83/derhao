@@ -103,10 +103,10 @@ INSERT INTO `table_background` (`id`, `photo`, `ten`, `position`, `repeat`, `col
 -- --------------------------------------------------------
 
 --
--- Table structure for table `table_baiviet`
+-- Table structure for table `table_news`
 --
 
-CREATE TABLE `table_baiviet` (
+CREATE TABLE `table_news` (
   `id` int(10) UNSIGNED NOT NULL,
   `id_item` int(11) NOT NULL,
   `noibat` int(12) NOT NULL,
@@ -138,10 +138,10 @@ CREATE TABLE `table_baiviet` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `table_baiviet`
+-- Dumping data for table `table_news`
 --
 
-INSERT INTO `table_baiviet` (`id`, `id_item`, `noibat`, `ten_vi`, `ten_en`, `mota_en`, `noidung_en`, `tenkhongdau`, `mota_vi`, `noidung_vi`, `loaitin`, `photo`, `thumb`, `thumb1`, `stt`, `hienthi`, `ngaytao`, `ngaysua`, `start_event`, `ten_cn`, `mota_cn`, `noidung_cn`, `seo_title`, `seo_keyword`, `seo_description`, `id_danhmuc`, `link`, `gallery`) VALUES
+INSERT INTO `table_news` (`id`, `id_item`, `noibat`, `ten_vi`, `ten_en`, `mota_en`, `noidung_en`, `tenkhongdau`, `mota_vi`, `noidung_vi`, `loaitin`, `photo`, `thumb`, `thumb1`, `stt`, `hienthi`, `ngaytao`, `ngaysua`, `start_event`, `ten_cn`, `mota_cn`, `noidung_cn`, `seo_title`, `seo_keyword`, `seo_description`, `id_danhmuc`, `link`, `gallery`) VALUES
 (1, 0, 0, 'DERHAO TEXTTILE CO. (VIETNAM)', 'DERHAO TEXTTILE CO. (VIETNAM)', 'Giới thiệu về công ty', '\r\nWe are now one of the best manufacture in fabric, home textile in Vietnam.\r\nEstablished from 1993,  we''re proud that we are the best supplier for fabrics , and home textile products. We''ve built reputation of reliability and now leading as leader in Vietnam home textile. We''re striving continuous to reach targets : best quality, social responsibility for consumer safety and health, reputation, customer satisfaction\r\nFrom normality  to luxury , simplicity to diversity. We are here to give you best service for your full house.\r\n', 'derhao-texttile-co-vietnam', '<hr />\r\n<p style="text-align:justify">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>\r\n', '<div>\r\n<p style="text-align:center"><img alt="" height="1200" src="/upload/user/images/derhao.jpg" width="1014" /></p>\r\n\r\n<p style="text-align:center"><span style="font-size:26px"><strong>DERHAO TEXTILE ( VIET NAM ) CO., LTD</strong></span></p>\r\n\r\n<p style="text-align:center"><span style="font-size:22px"><strong>Chúng tôi là một trong những nhà sản xuất vải, các sản phẩm trang trí nội thất hàng đầu Việt Nam</strong></span></p>\r\n\r\n<p style="text-align:center">&nbsp;</p>\r\n\r\n<p style="text-align:center"><span style="font-size:18px">Được thành lập từ&nbsp;năm 1993, chúng tôi luôn tự hào là nhà cung cung cấp vải, các sản phẩm trang trí nội ngoại thất uy tín, </span></p>\r\n\r\n<p style="text-align:center"><span style="font-size:18px">chất lượng. Mục tiêu chính chúng tôi đặt ra luôn phấn đấu đạt được đó là: chất lượng, an toàn sức khỏe người tiêu dùng, </span></p>\r\n\r\n<p style="text-align:center"><span style="font-size:18px">uy tín và sự hài lòng của&nbsp;quý khách hàng.</span></p>\r\n\r\n<p style="text-align:center">&nbsp;</p>\r\n\r\n<p style="text-align:center"><span style="font-size:18px">Với những sản phẩm cao cấp, đa dạng. Chúng tôi sẽ luôn đồng hành cùng bạn xây dựng một mái ấm tiện nghi và hạnh phúc.</span></p>\r\n</div>\r\n', '', '45676992.jpg', '45676992_269.93865030675x300.jpg', '09356290_175x135.jpg', 0, 0, 1404356111, 1465203763, '0000-00-00 00:00:00', '', '', '', '', '', '', 0, '', '[]'),
 (13, 0, 0, 'Về chúng tôi', 'About us', '', '', 've-chung-toi', '', '', '', '43289355.jpg', '43289355_400x142.31332357247.jpg', '', 0, 0, 1453349221, 1453519265, '0000-00-00 00:00:00', '', '', '', '', '', '', 0, '', '[]'),
 (14, 0, 0, 'New Collection', 'Mẫu vải mới', '', '', 'new-collection', '', '', '', '07215757.png', '07215757_400x204.09956076135.png', '', 0, 0, 1453349298, 1453519358, '0000-00-00 00:00:00', '', '', '', '', '', '', 0, '', '[]'),
@@ -17100,9 +17100,9 @@ ALTER TABLE `table_background`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `table_baiviet`
+-- Indexes for table `table_news`
 --
-ALTER TABLE `table_baiviet`
+ALTER TABLE `table_news`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -17427,10 +17427,6 @@ ALTER TABLE `table_advs`
 ALTER TABLE `table_background`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
--- AUTO_INCREMENT for table `table_baiviet`
---
-ALTER TABLE `table_baiviet`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 --
 -- AUTO_INCREMENT for table `table_config`
 --

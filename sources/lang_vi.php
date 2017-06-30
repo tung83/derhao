@@ -40,20 +40,20 @@
 @define ('_home','Trang chủ');
 @define ('_about','Giới thiệu');
 @define ('_product','Sản phẩm');
-@define ('_promotion','Khuyến mãi');
 @define ('_recruitment','Tuyển dụng');
 
 
 @define ('_welcome_to_our_facebook','Derhao Textile Facebook');
 @define ('_fabric','Vải');
-@define ('_instock','Khuyến mãi');
+@define ('_instock','Tin tức3');
 @define ('_wheretobuy','Hệ thống đại lý');
-@define ('_promotion','Promotion');
+@define ('_promotion','Khuyến mãi');
 @define ('_recruitment','Recruitment');
 
 
 @define ('_news','Tin tức');
 @define ('_faq','Hỏi đáp');
+@define ('_please_enter_keyword','Vui lòng nhập ký tự để tìm kiếm');
 @define ('_more_faq_info','Thông tin khác');
 @define ('_contact','Liên hệ');
 @define ('_service','Dịch vụ');
@@ -90,7 +90,7 @@
 @define('_about_derhao_textile','Giới thiệu Derhao Textile');
 @define('_sign_up','Đăng ký email để nhận được thông tin mới nhất về từ chúng tôi');
 @define('_contact_us','Liên hệ với chúng tôi');
-@define('_new_collection','Bộ sưu tập mới');
+@define('_new_collection','Bộ sưu tập vải');
 @define('_follow_us','Follow us');
 @define('_sign_up_btn','Gửi');
 @define('_register','Đăng ký');
@@ -139,7 +139,7 @@
 @define ('_tietkiem','Tiết kiệm');
 @define ('_read_cotinue','Đọc tiếp');
 @define ('_more_school_info','Các thông tin khác');
-@define ('_more_promotion_info','Khuyến mãi khác');
+@define ('_more_promotion_info','Tin tức khác');
 @define ('_more_service_info','Dịch vụ khác');
 /* product */
 @define('_giacu','Giá cũ');

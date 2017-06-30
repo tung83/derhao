@@ -8,8 +8,8 @@ if(isset($_GET['id'])){
 	$title_bar=$tintuc_detail['ten_'.$lang].' - ';
 	$title_cat=$tintuc_detail['ten_'.$lang];
 	addingSeo($tintuc_detail);
-	#các tin cu hon
-	$sql_khac = "select * from #_news where hienthi=1   and id <'".$id."' order by stt desc limit 0,8";
+	#cï¿½c tin cu hon
+	$sql_khac = "select * from #_news where hienthi=1   and id <>'".$id."' order by stt desc limit 0,8";
 	$d->query($sql_khac);
 	$more = _more_news_info;
 	

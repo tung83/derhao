@@ -36,7 +36,7 @@
 @define ('_home','Home');
 @define ('_about','About us');
 @define ('_fabric','Fabric');
-@define ('_instock','Promotion');
+@define ('_instock','News');
 @define ('_wheretobuy','Where to buys');
 @define ('_promotion','Promotion');
 @define ('_recruitment','Recruitment');
@@ -47,7 +47,6 @@
 @define ('_more_faq_info','More info');
 @define ('_contact','Contact');
 @define ('_customer_album','Customer Album');
-@define ('_news','News');
 @define ('_share','Qstudio on Facebook');
 @define ('_event','Event');
 @define ('_more_event_info','More event');
@@ -98,7 +97,7 @@
 @define('_about_derhao_textile','About Derhao Textile');
 @define('_sign_up','Sign up to receive information on new products from our');
 @define('_contact_us','Contact us');
-@define('_new_collection','New collection');
+@define('_new_collection','New Fabric collection');
 @define('_follow_us','Follow us');
 @define('_sign_up_btn','Sign up');
 @define('_register','Register');
@@ -165,7 +164,7 @@
 
 @define ('_read_cotinue','Read more');
 @define ('_more_school_info','More school info');
-@define ('_more_promotion_info','More promotion');
+@define ('_more_promotion_info','More news');
 @define ('_more_service_info','More service');
 
 /* visit */

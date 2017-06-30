@@ -17,7 +17,7 @@ if(isset($slider_type)){
 	$_type = $slider_type;
 }
 
-if($_type=="promotion"){
+if($_type=="news"){
 	$_type = "instock";
 }
 $d->query("select * from #_slider where hienthi = 1	and type='$_type' order by stt,id desc");
@@ -72,9 +72,10 @@ $().ready(function(){
 	$(".bx").bxSlider({
 		pager:0,
 		auto:1,
-		autoHover: true,
 		autoControls: true,
 		pause:4000,
+                mode: 'fade',
+                captions: true
     });
 	$sl_ = $(".title-nav.type_2");
 	if($sl_.length){
