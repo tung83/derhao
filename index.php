@@ -130,7 +130,7 @@ jQuery.browser = {};
 	<?php include _template."layout/footer_tools.php";?>
 
  <div id="download_document">
-	<a <?php if($_SESSION['member_log']>0){ echo 'class="various" href="#pop_download"'; }else {echo 'class="various1" href="#pop_noice"';}?> ><i class="fa fa-folder-open-o" aria-hidden="true"></i> Download <?=_document2?></a>
+	<a <?php echo 'class="various" href="#pop_download"';?> ><i class="fa fa-folder-open-o" aria-hidden="true"></i> Download <?=_document2?></a>
 	
 </div> 
 <div id="pop_noice" style="display:none">

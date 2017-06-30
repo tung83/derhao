@@ -176,7 +176,7 @@ function save_item(){
 	$data['price'] = str_replace(".","",$_POST['price']);
 	$data['gallery'] = json_encode($photos);
 	$data['id_danhmuc'] = $_POST['id_danhmuc'];
-	$data['id_list'] = $_POST['id_list'];
+	$data['id_list'] = is_numeric($_POST['id_list']) ? $_POST['id_list'] : 0;
 	$data['stt'] = $_POST['stt'];
 	$data['hienthi'] = isset($_POST['hienthi']) ? 1 : 0;
 	$data['is_index'] = isset($_POST['is_index']) ? 1 : 0;
