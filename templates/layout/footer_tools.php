@@ -4,12 +4,7 @@
 <a class="toggle-list visible-xs" href=""><i class="fa fa-angle-double-left"></i></a>
 <div class="navi">
 	<a href="" class="link-1 back-to-top" data-index="0" title="Move to top">Move to top</a>
-	<a href="" class="link-2" data-index="1" title="Skype">Skype</a>
-	<a href="" class="link-3" data-index="2" title="Email">Email</a>
-	<a href="<?=$rs_hotline['facebook']?>" onclick="javascript:displayWin('https://www.facebook.com/sharer/sharer.php?sdk=joey&u=<?=getCurrentPageUrl()?>&display=popup&ref=plugin&src=share_button','Share Facebook',700,400);return false;" target="_blank" class="link-4" data-index="3" title="Facebook">Facebook</a>
-	<a href="<?=$rs_hotline['twister']?>" target="_blank" class="link-5" data-index="4" title="Twister">Twister</a>
-	<a href="<?=$rs_hotline['google_plus']?>" target="_blank" class="link-6" data-index="5" title="Google plus">Google plus</a>
-	<a href="<?=$rs_hotline['youtube']?>" target="_blank" class="link-7" data-index="6" title="Youtube">Youtube</a>
+	
 </div>	
 	<div class="showbox-email link-3 box">
 		<div class="wrap">

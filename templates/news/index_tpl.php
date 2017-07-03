@@ -27,7 +27,7 @@
 				</div>
 				<div class="col-xs-12 col-md-8 col-sm-8">
 					<a href="<?=$com?>/<?=$tintuc[$i]['tenkhongdau']?>-<?=$tintuc[$i]['id']?>.html" title="<?=$tintuc[$i]['ten_'.$lang]?>"><h2><?=$tintuc[$i]['ten_'.$lang]?></h2></a>                  
-					<div class='date'><?=date("d/m/Y",$tintuc[$i]['ngaytao'])?></div>
+					<div class=''><?=date("d/m/Y",$tintuc[$i]['ngaytao'])?></div>
 					<p><?=cutString(strip_tags($tintuc[$i]['mota_'.$lang]),200,"...")?></p>
 					<a class="chitiet" href="<?=$com?>/<?=$tintuc[$i]['tenkhongdau']?>-<?=$tintuc[$i]['id']?>.html"><?=_read_cotinue?></a>
 				</div>	

@@ -50,15 +50,12 @@ if($cmd_id){
  <ul class="bx">
 	<?php 
 		foreach($slider as $k=>$v){
-		echo ' <li><img class="img-responsive" src="'.$config_url.'/'._upload_hinhanh_l.$v['photo'].'" alt="'.$v['ten'].'"></li>';
+		echo ' <li><a href="'.$v['link'].'">'
+                    . '<img class="img-responsive" src="'.$config_url.'/'._upload_hinhanh_l.$v['photo'].'" alt="'.$v['ten'].'" title="'.$v['ten'].'"></img></a></li>';
 			
 	}
 	?>
     </ul>
-	<div class="title-nav <?=$_cls?> anim-05">
-		<?=$r['ten_'.$lang]?>
-		
-	</div>
 </div>
 </div>	
 <div class="fixed-slider inset">
@@ -71,11 +68,11 @@ if($cmd_id){
 $().ready(function(){
 	$(".bx").bxSlider({
 		pager:0,
-		auto:1,
+		auto:0,
 		autoControls: true,
 		pause:4000,
                 mode: 'fade',
-                captions: true
+                captions: true,
     });
 	$sl_ = $(".title-nav.type_2");
 	if($sl_.length){
