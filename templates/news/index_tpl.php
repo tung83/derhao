@@ -38,9 +38,9 @@
         </div><!---END .box_new-->
        <?php if(($i+1)%2==0) echo '<div class="clearfix"></div>' ?>
     <?php } ?>
- <div class="clear"></div>    
+ <div class="clearfix"></div>    
  </div>
 </div><!---END .wrap-box-news-->
  <div class="phantrang" ><?=$paging['paging']?></div>
-<div class="clear"></div>
+<div class="clearfix"></div>
 </div>

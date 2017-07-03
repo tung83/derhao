@@ -174,24 +174,3 @@
 	
 
 ?>
-<section>
-	<div class="container-fluid">
-		
-		<div class="content row">
-			<div class="rel">
-			<div class="content-view-image type-<?=$fix_com?>" >
-				<img src="<?=_upload_news_l.$img?>" alt="Home" class="img-responsive" />
-				<div class="desc-view">
-					<a class="anim-05" href="<?=$arr[$com]['link']?>" title="" /><?=$arr[$com]['name']?></a>
-				</div>
-				
-				
-			</div>
-			
-			</div>
-		</div>
-		
-	</div>
-	
-
-</section>

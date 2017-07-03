@@ -156,7 +156,7 @@
 	text-decoration:none;
 	color: #000 !important;
 }
-.news-content img{max-width:100%}
+.news-content img{max-width:100%; height: auto;}
 .news-content .download-wrapper{
     padding:7px 10px;
     border: 1px solid #ccc;

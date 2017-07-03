@@ -3,7 +3,11 @@
 
 <a class="toggle-list visible-xs" href=""><i class="fa fa-angle-double-left"></i></a>
 <div class="navi">
-	<a href="" class="link-1 back-to-top" data-index="0" title="Move to top">Move to top</a>
+	<a href="" class="link-1 back-to-top" data-index="0" title="Move to top">Move to top</a>           
+ <div id="download-container">
+	<a class=" various" href="#pop_download" title="Download <?=_document2?>" ><div class="download-icon" aria-hidden="true"></div></a>
+	
+</div> 
 	
 </div>	
 	<div class="showbox-email link-3 box">
@@ -35,6 +39,80 @@
    
   </div>
 </form>
+                    
+         
+<div id="pop_noice" style="display:none">
+	Bạn phải đăng nhập để vào trang này!</br>Cảm ơn!</br>
+	<a href="" class="open_form link" data-type="login">Click vào đây để đăng nhập!</a>
+	
+</div>
+<div id="pop_download" style="display:none;">
+	<ul>
+		<?php 
+		$d->query("select ten_$lang,tenkhongdau,id from #_content_danhmuc where hienthi = 1 and noibat = 1 and type='download' order by stt desc");
+		$rs_danhmuc=$d->result_array();
+		foreach($rs_danhmuc as $k=>$v){
+		?>
+			<li class="item_danhmuc_download"><a href=""><?=$v['ten_'.$lang]?></a>
+				<ul class="submenu">
+					<?php 
+						$d->query("select id,ten_$lang,tenkhongdau,file from #_content where hienthi = 1 and id_danhmuc = ".$v['id']." and type='download' order by stt desc");
+						
+						if($d->num_rows()){
+						foreach($d->result_array() as $k2=>$v2){?>
+							<li>
+								<a href="<?=_upload_news_l.$v2['file']?>" target="_blank"><i class="fa fa-angle-double-right" aria-hidden="true"></i> <?=$v2['ten_'.$lang]?></a>
+							</li>
+						<?php 	
+						}
+						}
+					?>
+				</ul>
+			</li>
+		
+		<?php } ?>
+	</ul>
+</div>
+<script>
+	$(document).ready(function() {
+	$(".various1").fancybox({
+		maxWidth	: 400,
+		maxHeight	: 200,
+		fitToView	: false,
+		width		: '70%',
+		height		: '70%',
+		autoSize	: false,
+		closeClick	: false,
+		openEffect	: 'none',
+		closeEffect	: 'none'
+	});
+});
+
+</script>
+<script>
+	$(document).ready(function() {
+	$(".various").fancybox({
+		maxWidth	: 800,
+		maxHeight	: 600,
+		fitToView	: false,
+		width		: '70%',
+		height		: '70%',
+		autoSize	: false,
+		closeClick	: false,
+		openEffect	: 'none',
+		closeEffect	: 'none'
+	});
+});
+</script>
+<script>
+	$().ready(function(){
+		$(".open_form").click(function(){
+			$.fancybox.close();
+		})
+	});
+</script>
+                    
+                    
 <script>
  function displayWin(url,name,width,height) {
         var _left = (screen.width - width)/2;

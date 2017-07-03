@@ -18,28 +18,3 @@
 	<div class="clearfix"></div>
 </div>
 </div>
-<section>
-	<div class="container-fluid">
-		
-		<div class="content row">
-			<div class="rel">
-			<div class="content-view-image type-2" >
-				<?php 
-					$img = getoXimg(13);
-				
-				?>
-				<img src="<?=_upload_news_l.$img?>" alt="Home" class="img-responsive" />
-				<div class="desc-view">
-					<a href="fabric.html" title="Fabric" />NEW COLLECTION</a>
-				</div>
-				
-				
-			</div>
-			
-			</div>
-		</div>
-		
-	</div>
-	
-
-</section>
