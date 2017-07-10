@@ -15,7 +15,7 @@
 					
 						<?php
 						
-							$photo = ($tintuc[$i]['photo']) ? $tintuc[$i]['photo'] : 'images/noimage.gif';
+							$photo = ($tintuc[$i]['thumb']) ? $tintuc[$i]['thumb'] : 'images/noimage.gif';
 							if(!checkValidUrl($photo)){
 								$photo = _upload_tintuc_l.$photo;
 							}

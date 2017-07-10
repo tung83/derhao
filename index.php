@@ -31,6 +31,7 @@
 <meta name="DC.title" content="" />
 <meta name="ICBM" content="" />
 <meta name='revisit-after' content='1 days' />
+    <link rel="icon" type="image/png" href="images/logo.png"/>   
 <?=$global_setting['meta_top']?>
 <?=$global_setting['google_analytics']?>
 <?php 
@@ -47,7 +48,7 @@ $img = ($tintuc_detail) ? $config_url."/"._upload_news_l.$tintuc_detail['thumb']
 <meta property="og:url" content="<?=getCurrentPageUrl() ?>" />
 <meta property="og:description" content="<?=($description) ? $description : $title_bar.$row_title['ten']  ?>" />
 <meta property="og:site_name" content="<?=$title?>" />
-<title><?=$title_bar?></title> <!--<?=$title?> -->
+<title><?=$title_bar?>Derhao Textile (Viet Nam). Co., Ltd</title> <!--<?=$title?> -->
 <script>var base_url = '<?=$config_url?>';  </script>
 <script src="assets/js/jquery-1.11.2.min.js" type="text/javascript" ></script>
 <script src="assets/bootstrap/js/bootstrap.min.js" type="text/javascript" ></script>

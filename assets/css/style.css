@@ -1834,6 +1834,7 @@ top: 3px;display:none}
 }
 
 @media (max-width: 767px) {
+    header .top-header .holtline {margin-right: -5px}
 	.mini-part .nice-select{top:0 !important;width:100%}
 	#contact .title{margin-top:15px}
 	footer .social{display:inline-block}

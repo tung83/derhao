@@ -34,7 +34,7 @@
 		$menu.find("li").each(function(){
 			if($(this).find("ul").length){
 				$(this).addClass("has-child");
-				$(this).find("a").first().append("<span class='toggle-menu'><i class='glyphicon glyphicon-menu-down'></i></span>");
+				$(this).find("a").first().append("<span class='toggle-menu'><i class='fa fa-sort-desc'></i></span>");
 			}
 		})
 		$("#responsive-menu .toggle-menu").click(function(){

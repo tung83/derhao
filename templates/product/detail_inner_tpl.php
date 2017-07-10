@@ -13,7 +13,12 @@
 			<div class="col-xs-12 col-md-5 col-sm-6 col-md-offset-1" id="main-detail">
 						<?php 
 						
-						
+                                                if($row_detail['type']=='product'){
+                                                        $link=changeTitle(_product);
+                                                }
+                                                else{
+                                                                $link=changeTitle(_fabric);
+                                                }
 						
 						$ar = json_decode($row_detail['gallery2'],true);
 						$im = _upload_sanpham_l.$row_detail['photo'];
@@ -61,7 +66,7 @@
 				<div class="col-xs-12 col-md-5 col-sm-6  main-product-detail">
 				
 					<div class="global-title"><h1><?=$row_detail['ten_'.$lang]?><?=($row_detail['maso']) ? '<br /><span class="code">'.$row_detail['maso'].'</span>' : ''?></h1><div class="clearfix"></div>
-					<a href="<?=$com?>/<?=$row_detail['tenkhongdau']?>-<?=$row_detail['id']?>.html" title="Back"><img src="assets/img/close-detail.gif" alt="Back" /></a>
+					<a href="<?=$link?>/<?=$row_detail['tenkhongdau']?>-<?=$row_detail['id']?>.html" title="Back"><img src="assets/img/close-detail.gif" alt="Back" /></a>
 					</div>
 					<?php include _template."/layout/share.php"?>
 					<div class="clearfix"></div>

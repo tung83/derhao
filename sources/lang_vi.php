@@ -39,13 +39,13 @@
 @define ('_more_recruitment_info','Thông tin khác');
 @define ('_home','Trang chủ');
 @define ('_about','Giới thiệu');
-@define ('_product','Sản phẩm');
+@define ('_product','Thành phẩm');
 @define ('_recruitment','Tuyển dụng');
 
 
 @define ('_welcome_to_our_facebook','Derhao Textile Facebook');
 @define ('_fabric','Vải');
-@define ('_instock','Tin tức3');
+@define ('_instock','Tin tức');
 @define ('_wheretobuy','Hệ thống đại lý');
 @define ('_promotion','Khuyến mãi');
 @define ('_recruitment','Recruitment');
