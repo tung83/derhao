@@ -287,6 +287,9 @@
 
 @define ('_photocompany','Hình ảnh công ty');
 @define ('_projectdetails','Chi tiết dự án');
+@define ('_feature','Mô tả');
+@define ('_wavetype','Kiểu hoa văn');
+@define ('_productdetails','Chi tiết sản phẩm');
 @define ('_otherproducts','Các sản phẩm khác');
 @define ('_readmore','Xem tiếp...');
 @define ('_newsdetail','Chi tiết tin');

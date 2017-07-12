@@ -2,17 +2,7 @@
 <div class="wrap-all-product">
     <div class="category-list">
 		<ul>
-		
-		<li class="<?=(!$_GET['id_danhmuc']) ? 'active': ''?>">
-		<a href="<?=$com?>.html" title="<?=_all?>"><?=_all?></a>
-		</li>
 		<?php
-		
-			foreach($_list_product_danhmuc as $k=>$v){
-				$cls ='';
-				if($id_danhmuc==$v['id']){
-					$cls = " class='active' ";
-				}
 				if($v['type']=='product'){
 						$link=changeTitle(_product);
 				}else if($v['type']=='instock'){
@@ -20,6 +10,18 @@
 				}
 				else{
 						$link=changeTitle(_fabric);
+				}
+                                
+		?>
+		<li class="<?=(!$_GET['id_danhmuc']) ? 'active': ''?>">
+		<a href="<?=$link?>.html" title="<?=_all?>"><?=_all?></a>
+		</li>
+		<?php
+		
+			foreach($_list_product_danhmuc as $k=>$v){
+				$cls ='';
+				if($id_danhmuc==$v['id']){
+					$cls = " class='active' ";
 				}
 				echo '<li'.$cls.'><a href="'.$link.'/'.$v['tenkhongdau'].'-'.$v['id'].'/" title="'.$v['ten_'.$lang].'">'.$v['ten_'.$lang].'</a></li>';
 			}

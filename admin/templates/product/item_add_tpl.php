@@ -221,13 +221,24 @@
 				  <input type="text" name="ten_<?=$v?>" <?=$required?> value="<?=@$item['ten_'.$v]?>" class="form-control " id="inputEmail3">
 				</div>
 			 </div>
-			
-			
+			<div class="form-group ">
+				<label for="inputEmail3" class="col-sm-2 control-label">Nổi bật</label>
+				<div class="col-sm-10">
+				  <textarea  name="noibat_<?=$v?>" class="form-control editor"  id="noibat_<?=$v?>" ><?=@$item['noibat_'.$v]?></textarea>
+				</div>
+			</div>	
 				
 			<div class="form-group ">
 				<label for="inputEmail3" class="col-sm-2 control-label">Mô tả</label>
 				<div class="col-sm-10">
-				  <textarea  name="mota_<?=$v?>" class="form-control"  id="mota_<?=$v?>" ><?=@$item['mota_'.$v]?></textarea>
+				  <textarea  name="mota_<?=$v?>" class="form-control editor"  id="mota_<?=$v?>" ><?=@$item['mota_'.$v]?></textarea>
+				</div>
+			</div>	
+				
+			<div class="form-group ">
+				<label for="inputEmail3" class="col-sm-2 control-label">Kiểu hoa văn</label>
+				<div class="col-sm-10">
+				  <textarea  name="hoavan_<?=$v?>" class="form-control editor"  id="hoavan_<?=$v?>" ><?=@$item['hoavan_'.$v]?></textarea>
 				</div>
 			</div>
 		

@@ -256,7 +256,9 @@ function save_item(){
 	foreach($config['lang'] as $k=>$v){
 		$data['ten_'.$v] = $_POST['ten_'.$v];
 	
-		$data['noidung_'.$v] = magic_quote($_POST['noidung_'.$v]);			
+		$data['noidung_'.$v] = magic_quote($_POST['noidung_'.$v]);
+		$data['noibat_'.$v] = magic_quote($_POST['noibat_'.$v]);
+		$data['hoavan_'.$v] = magic_quote($_POST['hoavan_'.$v]);			
 		
 		$data['mota_'.$v] = magic_quote($_POST['mota_'.$v]);
 		$data['motangan_'.$v] = magic_quote($_POST['motangan_'.$v]);

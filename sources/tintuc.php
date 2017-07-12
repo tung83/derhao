@@ -1,4 +1,5 @@
 <?php  if(!defined('_source')) die("Error");
+@$id_danhmuc =  addslashes($_GET['id_danhmuc']);
 if(isset($_GET['id'])){
 	#tin tuc chi tiet
 	$id =  addslashes($_GET['id']);
@@ -18,7 +19,11 @@ if(isset($_GET['id'])){
 }else{
 	$title_bar= _news.' - ';		
 	$title_cat= _news.'';	
-	$sql_tintuc = "select * from #_news where hienthi=1   order by stt desc";
+	$sql_tintuc = "select * from #_news where hienthi=1 ";
+        if($id_danhmuc!=''){
+            $sql_tintuc .= " and  id_danhmuc='$id_danhmuc'";
+        }
+        $sql_tintuc .=  " order by stt desc";
 	$d->query($sql_tintuc);
 	$tintuc = $d->result_array();
 	$curPage = isset($_GET['p']) ? $_GET['p'] : 1;
@@ -27,5 +32,10 @@ if(isset($_GET['id'])){
 	$maxP=5;
 	$paging=paging_home($tintuc, $url, $curPage, $maxR, $maxP);
 	$tintuc=$paging['source'];
+        
+	$_list_news_danhmuc = array();
+	$d->query("select ten_$lang,tenkhongdau,id,type from #_news_danhmuc where hienthi = 1 order by stt desc");
+	
+	$_list_news_danhmuc = $d->result_array();
 }
 ?>

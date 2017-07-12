@@ -77,7 +77,8 @@
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-					<?=$admin->showMenu("Danh sach tin tức","news","man_danhmuc","","")?>
+					<?=$admin->showMenu("Quản lý danh mục cấp 1","news","man_danhmuc","","")?>
+					<?=$admin->showMenu("Danh sach tin tức","news","man","","")?>
                   
 					
               </ul>

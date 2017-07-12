@@ -1,3 +1,61 @@
+ALTER TABLE `table_product` ADD `noibat_vi` TEXT NULL AFTER `gallery2`;
+ALTER TABLE `table_product` ADD `noibat_en` TEXT NULL AFTER `noibat_vi`;
+ALTER TABLE `table_product` ADD `hoavan_vi` TEXT NULL AFTER `noibat_en`;
+ALTER TABLE `table_product` ADD `hoavan_en` TEXT NULL AFTER `hoavan_vi`;
+
+
+CREATE TABLE `table_news_danhmuc` (
+  `id` int(11) NOT NULL,
+  `ten_vi` varchar(255) NOT NULL,
+  `tenkhongdau` varchar(255) NOT NULL,
+  `photo` varchar(255) NOT NULL,
+  `thumb` varchar(255) NOT NULL,
+  `stt` int(11) NOT NULL,
+  `hienthi` int(11) NOT NULL,
+  `ngaytao` int(11) NOT NULL,
+  `ngaysua` int(11) NOT NULL,
+  `ten_en` varchar(255) NOT NULL,
+  `ten_cn` varchar(255) NOT NULL,
+  `seo_title` varchar(255) NOT NULL,
+  `seo_keyword` text NOT NULL,
+  `seo_description` text NOT NULL,
+  `noibat` int(11) NOT NULL,
+  `background_color` varchar(255) NOT NULL,
+  `type` varchar(255) NOT NULL,
+  `noidung_vi` longtext NOT NULL,
+  `noidung_en` longtext NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `table_news_danhmuc`
+--
+
+INSERT INTO `table_news_danhmuc` (`id`, `ten_vi`, `tenkhongdau`, `photo`, `thumb`, `stt`, `hienthi`, `ngaytao`, `ngaysua`, `ten_en`, `ten_cn`, `seo_title`, `seo_keyword`, `seo_description`, `noibat`, `background_color`, `type`, `noidung_vi`, `noidung_en`) VALUES
+(1, 'Nước hoa nam', 'nuoc-hoa-nam', '', '', 3, 1, 1438260882, 1449646385, '', '', 'Máy cắt kim loại', 'Máy cắt kim loại', 'Máy cắt kim loại', 1, '', '', '', '');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `table_news_danhmuc`
+--
+ALTER TABLE `table_news_danhmuc`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `table_news_danhmuc`
+--
+ALTER TABLE `table_news_danhmuc`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+
+
+
 -- phpMyAdmin SQL Dump
 -- version 4.6.4
 -- https://www.phpmyadmin.net/

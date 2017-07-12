@@ -48,12 +48,15 @@
 							<ul id="carousel" class="bx-slides">
 							
 							<?php 
-													foreach($ar[0] as $k=>$v){?>
-														<li><a href="javascript:void(0)" data-name="<?=$v['desc']?>" data-image="<?=$config_url.$v['photo']?>" data-zoom-image="<?=$config_url.$v['photo']?>">
-														<img id="img_01" src="<?=$config_url.$v['photo']?>" class="img-responsive"/>
+                                                        
+					foreach($ar as $k1=>$v1){
+													foreach($v1 as $k2=>$v2){?>
+														<li><a href="javascript:void(0)" data-name="<?=$v['desc']?>" data-image="<?=$config_url.$v2['photo']?>" data-zoom-image="<?=$config_url.$v2['photo']?>">
+														<img id="img_01" src="<?=$config_url.$v2['photo']?>" class="img-responsive"/>
 														</a></li>
 													<?php
-													}										
+													}
+                                        }
 									
 									?>
 									</ul>
@@ -120,6 +123,9 @@
 							
 						?>
 						
+							<div class="contact-link">
+								<a href="<?=getLink(changeTitle(_contact).".html")?>" title="<?=_contact?>"><?=_contact?></a>
+							</div>
 							<div class="desc-place">
 							<div class='clearfix'></div>
 							<div class="wrap">
@@ -127,9 +133,6 @@
 							</div>
 							
 							</div><!-- end desc-place -->
-							<div class="contact-link">
-								<a href="<?=getLink(changeTitle(_contact).".html")?>" title="<?=_contact?>"><?=_contact?></a>
-							</div>
 							
 					
 				</div><!-- end main-product-detail -->
@@ -139,35 +142,7 @@
 				<div class="clearfix"></div>
 				<div class="mx-br">
 				<div class="row-5">
-				<?php 
-					foreach($ar as $k=>$v){
-						echo '<script>';
-							echo 'var _list_'.$k.' = '.json_encode($v).';';
-						echo '</script>';
-						foreach($v as $k2=>$v2){
-							if(!$k2){
-							echo '<div class="col-xs-6 col-sm-3 col-md-2 col-5">';
-								echo '<div class="item-x">';
-									echo '<a href="" data-for="'.$k.'" title="'.$v2['desc'].'"><img class="img-responsive" src="thumb/200x150/1'.$v2['photo'].'" /></a>';
-									echo '<div class="name">';
-										echo '<a href="" data-for="'.$k.'" title="'.$v2['desc'].'">'.$v2['desc'].'</a>';
-									echo '</div>';
-								echo '</div>';
-							
-							echo '</div>';
-							}
-							
-							
-							
-						}
-						
-						
-						
-						
-						
-					}
 				
-				?>
 				
 				</div>
 				<div class="clearfix"></div>

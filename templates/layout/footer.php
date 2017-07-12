@@ -187,12 +187,12 @@
 				<div class="col-xs-12 col-md-6 pull-right col-sm-6">
 					<ul>
 						<li><a href="" title="<?=_home?>"><?=_home?></a></li>
-						<li><a href="about.html" title="<?=_about?>"><?=_about?></a></li>
-						<li><a href="fabric.html" title="<?=_fabric?>"><?=_fabric?></a></li>
-						<li><a href="product.html" title="<?=_product?>"><?=_product?></a></li>
-						<li><a href="promotion.html" title="<?=_instock?>"><?=_instock?></a></li>
-						<li><a href="where-to-buy.html" title="<?=_wheretobuy?>"><?=_wheretobuy?></a></li>
-						<li><a href="contact.html" title="<?=_contact?>"><?=_contact?></a></li>
+						<li><a href="<?=getLink(changeTitle(_about).".html")?>" title="<?=_about?>"><?=_about?></a></li>
+						<li><a href="<?=getLink(changeTitle(_fabric).".html")?>" title="<?=_fabric?>"><?=_fabric?></a></li>
+						<li><a href="<?=getLink(changeTitle(_product).".html")?>" title="<?=_product?>"><?=_product?></a></li>
+						<li><a href="<?=getLink(changeTitle(_news).".html")?>" title="<?=_news?>"><?=_news?></a></li>
+						<li><a href="<?=getLink(changeTitle(_wheretobuy).".html")?>" title="<?=_wheretobuy?>"><?=_wheretobuy?></a></li>
+						<li><a href="<?=getLink(changeTitle(_contact).".html")?>" title="<?=_contact?>"><?=_contact?></a></li>
 						
 					</ul>
 				

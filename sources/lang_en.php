@@ -125,6 +125,10 @@
 @define ('_quantity','Quantity');
 @define ('_total_price','Total price');
 @define ('_product_selles','Product best seller');
+
+@define ('_feature','Features');
+@define ('_wavetype','Wave Type');
+@define ('_productdetails','Details');
 @define ('_otherproducts','Other products');
 @define ('_delete','Delete');
 /* cart */

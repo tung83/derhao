@@ -19,7 +19,7 @@ $("#xoahet").click(function(){
 });
 </script>
 <div class="box-header with-border">
-<h3>Quản lý danh mục</h3>
+<h3>Quản lý danh mục </h3>
 </div>
 <div class="box-body">
 <table class="table table-bordered">

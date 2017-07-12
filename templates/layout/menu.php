@@ -1,7 +1,6 @@
 <nav class="menu">
 	<div class="wrap-nav">	
 	<ul id="main-nav" >	
-			<li class=" <?php if($template=='index'){ echo 'active';}?>"><a href="" title="<?=_home?>"><?=_home?></a></li>
 			<li class=" <?php if($com==changeTitle(_about)){ echo 'active';}?>"><a href="<?=getLink(changeTitle(_about).".html")?>" title="<?=_about?>"><?=_about?></a></li>
 			<li <?php if($com=='fabric'){ echo 'class="active"';}?>><a href="<?=getLink(changeTitle(_fabric).".html")?>" title="<?= _fabric ?>"><?=_fabric?></a>
                             <ul >
@@ -32,7 +31,18 @@
                             </ul>
                         </li>
 			<li <?php if($com==changeTitle(_news)){ echo 'class="active"';}?>><a href="<?=getLink(changeTitle(_news).".html")?>" title="<?=_news?>"><?=_news?></a>
-                            
+                            <ul >
+                                <?php 
+                                        $link2=changeTitle(_news);
+                                        echo '<li><a href="'.$link2.'.html">'._all.'</a></li>';
+
+                                        $d->query("select ten_$lang,tenkhongdau,id,type from #_news_danhmuc where hienthi = 1 order by stt desc");
+                                        $_list_news_danhmuc2 = $d->result_array();
+                                        foreach($_list_news_danhmuc2 as $k=>$v){
+                                            echo '<li><a href="'.$link2.'/'.$v['tenkhongdau'].'-'.$v['id'].'/" title="'.$v['ten_'.$lang].'">'.$v['ten_'.$lang].'</a></li>';
+                                        }
+                                ?>
+                            </ul>
                         </li>
 			<li <?php if($com==changeTitle(_wheretobuy)){ echo 'class="active"';}?>><a href="<?=getLink(changeTitle(_wheretobuy).".html")?>" title="<?=_wheretobuy?>"><?=_wheretobuy?></a></li>
 			<li  class=" <?php if($com==changeTitle(_contact)){ echo 'active';}?>"><a href="<?=getLink(changeTitle(_contact).".html")?>" title="<?=_contact?>"><?=_contact?></a></li>

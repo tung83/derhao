@@ -195,7 +195,7 @@ else
 	$slider_cls = "type_2";
 	$slider_title = _new_collection;
 	
-	$array=array("vai"=>"fabric","san-pham"=>"product","khuyen-mai"=>"promotion");
+	$array=array("vai"=>"fabric","thanh-pham"=>"product","khuyen-mai"=>"promotion");
 	$slider_type = ($array[$com]) ? $array[$com] : $com;
 	$com = ($array[$com]) ? $array[$com] : $com;
 	if($slider_type=="product"){

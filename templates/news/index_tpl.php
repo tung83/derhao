@@ -1,7 +1,25 @@
 <link href="assets/css/news.css" type="text/css" rel="stylesheet" />
 <div class="box_containerlienhe container">
-<div class="title-global"><h2><?=$title_cat?></h2><div class="clearfix"></div></div>
-<div class="wrap-box-news ">
+<div class="wrap-box-news wrap-all-product">
+    
+    <div class="category-list">
+		<ul>
+		<li class="<?=(!$_GET['id_danhmuc']) ? 'active': ''?>">
+		<a href="<?=$com?>.html" title="<?=_all?>"><?=_all?></a>
+		</li>
+		<?php
+		
+			foreach($_list_news_danhmuc as $k=>$v){
+				$cls ='';
+				if($id_danhmuc==$v['id']){
+					$cls = " class='active' ";
+				}
+				echo '<li'.$cls.'><a href="'.$link.'/'.$v['tenkhongdau'].'-'.$v['id'].'/" title="'.$v['ten_'.$lang].'">'.$v['ten_'.$lang].'</a></li>';
+			}
+		?>
+		</ul>
+    </div>
+    <div class="clearfix"></div>
 	<div class="">
  	<?php for($i = 0, $count_tintuc = count($tintuc); $i < $count_tintuc; $i++){ ?>
         <div class="col-xs-12 col-md-6 col-sm-6 ">
