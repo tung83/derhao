@@ -4,11 +4,8 @@
     
     <div class="category-list">
 		<ul>
-		<li class="<?=(!$_GET['id_danhmuc']) ? 'active': ''?>">
-		<a href="<?=$com?>.html" title="<?=_all?>"><?=_all?></a>
-		</li>
-		<?php
-		
+		<?php		
+			$link=changeTitle(_news);
 			foreach($_list_news_danhmuc as $k=>$v){
 				$cls ='';
 				if($id_danhmuc==$v['id']){

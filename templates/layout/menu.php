@@ -6,8 +6,6 @@
                             <ul >
                                 <?php 
                                         $link1=changeTitle(_fabric);
-                                        echo '<li><a href="'.$link1.'.html">'._all.'</a></li>';
-
                                         $d->query("select ten_$lang,tenkhongdau,id,type from #_product_danhmuc where hienthi = 1 and type='fabric' order by stt desc");
                                         $_list_product_danhmuc1 = $d->result_array();
                                         foreach($_list_product_danhmuc1 as $k=>$v){
@@ -20,8 +18,6 @@
                             <ul >
                                 <?php 
                                         $link2=changeTitle(_product);
-                                        echo '<li><a href="'.$link2.'.html">'._all.'</a></li>';
-
                                         $d->query("select ten_$lang,tenkhongdau,id,type from #_product_danhmuc where hienthi = 1 and type='product' order by stt desc");
                                         $_list_product_danhmuc2 = $d->result_array();
                                         foreach($_list_product_danhmuc2 as $k=>$v){
@@ -34,8 +30,6 @@
                             <ul >
                                 <?php 
                                         $link2=changeTitle(_news);
-                                        echo '<li><a href="'.$link2.'.html">'._all.'</a></li>';
-
                                         $d->query("select ten_$lang,tenkhongdau,id,type from #_news_danhmuc where hienthi = 1 order by stt desc");
                                         $_list_news_danhmuc2 = $d->result_array();
                                         foreach($_list_news_danhmuc2 as $k=>$v){

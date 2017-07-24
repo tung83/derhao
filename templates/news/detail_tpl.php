@@ -1,7 +1,22 @@
 <link rel="stylesheet/less" type="text/css" href="assets/css/less/news.less">
 <link href="assets/css/news.css" type="text/css" rel="stylesheet" />
-<div class="news-content container">
-	<div class="">
+<div class="news-content container wrap-all-product">
+    
+    <div class="category-list">
+		<ul>
+		<?php		
+			$link=changeTitle(_news);
+			foreach($_list_news_danhmuc as $k=>$v){
+				$cls ='';
+				if($id_danhmuc==$v['id']){
+					$cls = " class='active' ";
+				}
+				echo '<li'.$cls.'><a href="'.$link.'/'.$v['tenkhongdau'].'-'.$v['id'].'/" title="'.$v['ten_'.$lang].'">'.$v['ten_'.$lang].'</a></li>';
+			}
+		?>
+		</ul>
+    </div>
+<div class="">
 		<div class="header text-center">
 			<h2><?=$tintuc_detail['ten_'.$lang]?></h2>
 			<div class="date"><?=date("d-m-Y",$tintuc_detail['ngaytao'])?></div>

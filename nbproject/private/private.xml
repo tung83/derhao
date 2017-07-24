@@ -6,24 +6,28 @@
             <file>file:/D:/wamp64/www/derhao/templates/layout/footer.php</file>
             <file>file:/D:/wamp64/www/derhao/sources/product.php</file>
             <file>file:/D:/wamp64/www/derhao/templates/product/detail_tpl.php</file>
+            <file>file:/D:/wamp64/www/derhao/templates/contact_tpl.php</file>
+            <file>file:/D:/wamp64/www/derhao/admin/templates/news/item_add_tpl.php</file>
+            <file>file:/D:/wamp64/www/derhao/templates/news/detail_tpl.php</file>
+            <file>file:/D:/wamp64/www/derhao/admin/templates/product/danhmucs_tpl.php</file>
+            <file>file:/D:/wamp64/www/derhao/templates/index_tpl.php</file>
+            <file>file:/D:/wamp64/www/derhao/admin/templates/product/item_add_tpl.php</file>
+            <file>file:/D:/wamp64/www/derhao/templates/layout/footer_link_tpl.php</file>
+            <file>file:/D:/wamp64/www/derhao/sources/tintuc.php</file>
+            <file>file:/D:/wamp64/www/derhao/admin/lib/admin.php</file>
+            <file>file:/D:/wamp64/www/derhao/admin/lib/file_requick.php</file>
+            <file>file:/D:/wamp64/www/derhao/templates/layout/menu.php</file>
             <file>file:/D:/wamp64/www/derhao/templates/product/detail_inner_tpl.php</file>
             <file>file:/D:/wamp64/www/derhao/admin/templates/menu_tpl.php</file>
-            <file>file:/D:/wamp64/www/derhao/admin/templates/news/item_add_tpl.php</file>
             <file>file:/D:/wamp64/www/derhao/templates/product/index_tpl.php</file>
             <file>file:/D:/wamp64/www/derhao/map.php</file>
             <file>file:/D:/wamp64/www/derhao/assets/css/slider-bx.css</file>
-            <file>file:/D:/wamp64/www/derhao/admin/templates/product/danhmucs_tpl.php</file>
-            <file>file:/D:/wamp64/www/derhao/admin/templates/product/item_add_tpl.php</file>
             <file>file:/D:/wamp64/www/derhao/admin/templates/product/items_tpl.php</file>
             <file>file:/D:/wamp64/www/derhao/admin/lib/config.php</file>
-            <file>file:/D:/wamp64/www/derhao/templates/layout/footer_link_tpl.php</file>
+            <file>file:/D:/wamp64/www/derhao/.htaccess</file>
             <file>file:/D:/wamp64/www/derhao/psmedia_derhao%20(1).sql</file>
-            <file>file:/D:/wamp64/www/derhao/sources/tintuc.php</file>
             <file>file:/D:/wamp64/www/derhao/index.php</file>
-            <file>file:/D:/wamp64/www/derhao/admin/lib/admin.php</file>
             <file>file:/D:/wamp64/www/derhao/templates/news/index_tpl.php</file>
-            <file>file:/D:/wamp64/www/derhao/admin/lib/file_requick.php</file>
-            <file>file:/D:/wamp64/www/derhao/templates/layout/menu.php</file>
         </group>
     </open-files>
 </project-private>

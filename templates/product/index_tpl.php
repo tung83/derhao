@@ -13,9 +13,6 @@
 				}
                                 
 		?>
-		<li class="<?=(!$_GET['id_danhmuc']) ? 'active': ''?>">
-		<a href="<?=$link?>.html" title="<?=_all?>"><?=_all?></a>
-		</li>
 		<?php
 		
 			foreach($_list_product_danhmuc as $k=>$v){

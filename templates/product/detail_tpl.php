@@ -1,8 +1,32 @@
 <!-- <link href="assets/plugins/zoom/css/zoom.css" rel="stylesheet">
 <script src="assets/plugins/zoom/js/zoom.js"></script>-->
 <div class='container' id='product-detail-outter'>
-	<div class="container">
-	
+	<div class="container wrap-all-product">
+<div class="category-list">
+		<ul>
+		<?php
+				if($com=='product'){
+						$link=changeTitle(_product);
+				}else if($com=='instock'){
+					$link=changeTitle(_promotion);
+				}
+				else{
+						$link=changeTitle(_fabric);
+				}
+                                
+		?>
+		<?php
+		
+			foreach($_list_product_danhmuc as $k=>$v){
+				$cls ='';
+				if($id_danhmuc==$v['id']){
+					$cls = " class='active' ";
+				}
+				echo '<li'.$cls.'><a href="'.$link.'/'.$v['tenkhongdau'].'-'.$v['id'].'/" title="'.$v['ten_'.$lang].'">'.$v['ten_'.$lang].'</a></li>';
+			}
+		?>
+		</ul>
+    </div>	
 
 
 <link href="assets/plugins/bxslider/jquery.bxslider.css" type="text/css" rel="stylesheet" />
@@ -16,8 +40,11 @@
 			<div class="col-xs-12 col-md-5 col-sm-6 col-md-offset-1" id="main-detail">
 						<?php 
 						
-                                                if($row_detail['type']=='product'){
-                                                        $link=changeTitle(_product);
+                                                
+                                                if($com=='product'){
+                                                                $link=changeTitle(_product);
+                                                }else if($com=='instock'){
+                                                        $link=changeTitle(_promotion);
                                                 }
                                                 else{
                                                                 $link=changeTitle(_fabric);
@@ -264,14 +291,15 @@
 						if($v['sale']){
 									echo '<div class="sale-rb"></div>';
 								}
-							if($v['type']=='product'){
-							$link=changeTitle(_product);
-						}else if($v['type']=='instock'){
-							$link=changeTitle(_promotion);
-						}
-						else{
-								$link=changeTitle(_fabric);
-						}
+						
+                                                        if($com=='product'){
+                                                                        $link=changeTitle(_product);
+                                                        }else if($com=='instock'){
+                                                                $link=changeTitle(_promotion);
+                                                        }
+                                                        else{
+                                                                        $link=changeTitle(_fabric);
+                                                        }
 					?>
 					<a href="<?=$link?>/<?=$v['tenkhongdau']?>-<?=$v['id']?>.html" title="<?=$v['ten_'.$lang]?>">
 						<img src="thumb/340x240/1/<?=_upload_sanpham_l.$v['photo']?>"  alt="<?=$v['ten_'.$lang]?>" />

@@ -33,9 +33,9 @@ if(isset($_GET['id'])){
 	$paging=paging_home($tintuc, $url, $curPage, $maxR, $maxP);
 	$tintuc=$paging['source'];
         
-	$_list_news_danhmuc = array();
-	$d->query("select ten_$lang,tenkhongdau,id,type from #_news_danhmuc where hienthi = 1 order by stt desc");
-	
-	$_list_news_danhmuc = $d->result_array();
 }
+$_list_news_danhmuc = array();
+$d->query("select ten_$lang,tenkhongdau,id,type from #_news_danhmuc where hienthi = 1 order by stt desc");
+
+$_list_news_danhmuc = $d->result_array();
 ?>
