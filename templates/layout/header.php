@@ -37,7 +37,7 @@ $rs_banner = $d->fetch_array();
 						$ob_lang = ($lang=="vi") ? 'en' : 'vi';                        
                                                 $ob_lang_image = ($lang=="vi") ? '<img src="/images/flag_en.png">' : '<img src="/images/flag_vi.png"/>';
 					?>
-					                    <div class="holtline"><span class=" <?=($global_setting['visible_hotline']) ? '' : 'hide'?>">Hotline: <a href="tel:<?=$rs_hotline['hotline_'.$lang]?>"><?=$rs_hotline['hotline_'.$lang]?></a></span> <span><?=_language?>&nbsp;<a href="index.php?com=ngonngu&lang=<?=$ob_lang?>"><?=$ob_lang_image?></a></span></div>
+					                    <div class="holtline"><span class=" <?=($global_setting['visible_hotline']) ? '' : 'hide'?>">Hotline: <a href="tel:<?=$rs_hotline['hotline_'.$lang]?>"><?=$rs_hotline['hotline_'.$lang]?></a></span> <span>&nbsp;<a href="index.php?com=ngonngu&lang=<?=$ob_lang?>"><?=$ob_lang_image?></a></span></div>
 				
 	
 					<div class="search-bar hidden-xs hidden-sm">

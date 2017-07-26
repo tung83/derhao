@@ -6,6 +6,9 @@
 	$title_bar = _contact." - ";
 	$title_tcat = _contact;
 
+	$d->reset();
+	$d->query("select * from #_footer "); 
+	$footer = $d->fetch_array();
 	
 	
 		

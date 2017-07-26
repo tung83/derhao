@@ -3,16 +3,7 @@
 	<ul id="main-nav" >	
 			<li class=" <?php if($com==changeTitle(_about)){ echo 'active';}?>"><a href="<?=getLink(changeTitle(_about).".html")?>" title="<?=_about?>"><?=_about?></a></li>
 			<li <?php if($com=='fabric'){ echo 'class="active"';}?>><a href="<?=getLink(changeTitle(_fabric).".html")?>" title="<?= _fabric ?>"><?=_fabric?></a>
-                            <ul >
-                                <?php 
-                                        $link1=changeTitle(_fabric);
-                                        $d->query("select ten_$lang,tenkhongdau,id,type from #_product_danhmuc where hienthi = 1 and type='fabric' order by stt desc");
-                                        $_list_product_danhmuc1 = $d->result_array();
-                                        foreach($_list_product_danhmuc1 as $k=>$v){
-                                            echo '<li><a href="'.$link1.'/'.$v['tenkhongdau'].'-'.$v['id'].'/" title="'.$v['ten_'.$lang].'">'.$v['ten_'.$lang].'</a></li>';
-                                        }
-                                ?>
-                            </ul>
+                            
                         </li>
 			<li <?php if($com=='product'){ echo 'class="active"';}?>><a href="<?=getLink(changeTitle(_product).".html")?>" title="<?=_product?>"><?=_product?></a>
                             <ul >

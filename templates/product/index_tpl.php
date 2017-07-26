@@ -3,25 +3,16 @@
     <div class="category-list">
 		<ul>
 		<?php
-				if($v['type']=='product'){
-						$link=changeTitle(_product);
-				}else if($v['type']=='instock'){
-					$link=changeTitle(_promotion);
-				}
-				else{
-						$link=changeTitle(_fabric);
-				}
-                                
-		?>
-		<?php
-		
-			foreach($_list_product_danhmuc as $k=>$v){
-				$cls ='';
-				if($id_danhmuc==$v['id']){
-					$cls = " class='active' ";
-				}
-				echo '<li'.$cls.'><a href="'.$link.'/'.$v['tenkhongdau'].'-'.$v['id'].'/" title="'.$v['ten_'.$lang].'">'.$v['ten_'.$lang].'</a></li>';
-			}
+                    if($v['type']=='product'){
+                        $link=changeTitle(_product);
+                        foreach($_list_product_danhmuc as $k=>$v){
+                                $cls ='';
+                                if($id_danhmuc==$v['id']){
+                                        $cls = " class='active' ";
+                                }
+                                echo '<li'.$cls.'><a href="'.$link.'/'.$v['tenkhongdau'].'-'.$v['id'].'/" title="'.$v['ten_'.$lang].'">'.$v['ten_'.$lang].'</a></li>';
+                        }
+                    }                                
 		?>
 		</ul>
     </div>

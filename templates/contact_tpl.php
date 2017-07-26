@@ -35,6 +35,9 @@
 				<div class=""><i class="fa fa-envelope"></i>&nbsp;<?=$rs_hotline['email_'.$lang]?></div>
 			
 			</div>
+			<div class="list-comname">
+                        <?=$footer['noidung_'.$lang]?>
+			</div>
 			</div>
 			
 			<div class="col-xs-12 col-md-5 col-sm-12">
@@ -102,6 +105,9 @@
 					</div>
 					
 				</section>
+                                <div class="google-maps">
+                                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.515963741779!2d106.71686581533031!3d10.924343142221236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d77dcff852e3%3A0x99bb25002fb8146c!2sC%C3%B4ng+Ty+Tnhh+Derhao+Vi%E1%BB%87t+Nam!5e0!3m2!1svi!2s!4v1501038387757"  width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                </div>
 	
 	
 	</div>

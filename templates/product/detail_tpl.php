@@ -5,25 +5,17 @@
 <div class="category-list">
 		<ul>
 		<?php
-				if($com=='product'){
-						$link=changeTitle(_product);
-				}else if($com=='instock'){
-					$link=changeTitle(_promotion);
-				}
-				else{
-						$link=changeTitle(_fabric);
-				}
+                    if($com=='product'){
+                        $link=changeTitle(_product);
+                        foreach($_list_product_danhmuc as $k=>$v){
+                            $cls ='';
+                            if($id_danhmuc==$v['id']){
+                                    $cls = " class='active' ";
+                            }
+                            echo '<li'.$cls.'><a href="'.$link.'/'.$v['tenkhongdau'].'-'.$v['id'].'/" title="'.$v['ten_'.$lang].'">'.$v['ten_'.$lang].'</a></li>';
+                        }
+                    }
                                 
-		?>
-		<?php
-		
-			foreach($_list_product_danhmuc as $k=>$v){
-				$cls ='';
-				if($id_danhmuc==$v['id']){
-					$cls = " class='active' ";
-				}
-				echo '<li'.$cls.'><a href="'.$link.'/'.$v['tenkhongdau'].'-'.$v['id'].'/" title="'.$v['ten_'.$lang].'">'.$v['ten_'.$lang].'</a></li>';
-			}
 		?>
 		</ul>
     </div>	
@@ -184,20 +176,30 @@
 <div class="clearfix"></div>
 <ul class="nav nav-tabs">
   <li class="active"><a data-toggle="tab" href="#home"><?=_feature?></a></li>
+  
+    <?php 
+        if(!($com=='product')){
+    ?>
   <li><a data-toggle="tab" href="#menu1"><?=_wavetype?></a></li>
   <li><a data-toggle="tab" href="#menu2"><?=_productdetails?></a></li>
+  
+   <?php } ?>
 </ul>
 
 <div class="tab-content">
   <div id="home" class="tab-pane fade in active">
       <?php echo nl2br($row_detail['mota_'.$lang])?>
   </div>
+    <?php 
+        if(!($com=='product')){
+    ?>
   <div id="menu1" class="tab-pane fade">
       <?php echo nl2br($row_detail['hoavan_'.$lang])?>
   </div>
   <div id="menu2" class="tab-pane fade">
       <?php echo nl2br($row_detail['noidung_'.$lang])?>
   </div>
+   <?php } ?>
 </div>
 
 	

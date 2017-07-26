@@ -408,7 +408,7 @@
 	
 	</div>
 	<!---------------->
-	<div class="container">
+	<div class="">
 	<div class="clearfix"></div>
 	<link href="assets/css/lienhe.css" type="text/css" rel="stylesheet" />
 <link href="assets/css/map.css" type="text/css" rel="stylesheet" />
